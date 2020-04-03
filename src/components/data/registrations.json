@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Sridhar",
+    "lastName": "Karanam",
+    "emailAddress": "karanamsridhar@gmail.com"
+  },
+  {
+    "firstName": "Satya",
+    "lastName": "Karanam",
+    "emailAddress": "karanamsatya@gmail.com"
+  },
+  {
+    "firstName": "Purvik",
+    "lastName": "Karanam",
+    "emailAddress": "karanampurvik@gmail.com"
+  },
+  {
+    "firstName": "Rajeev",
+    "lastName": "Karanam",
+    "emailAddress": "karanamrajeev@gmail.com"
+  },
+  {
+    "firstName": "Saritha",
+    "lastName": "Karanam",
+    "emailAddress": "karanamsaritha@gmail.com"
+  },
+  {
+    "firstName": "Aashi",
+    "lastName": "Karanam",
+    "emailAddress": "karanamaashi@gmail.com"
+  }
+]
