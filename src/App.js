@@ -20,7 +20,10 @@ export class App extends Component {
       body: JSON.stringify(newUser)
     };
 
-    fetch("/registration/addNewUser", requestOptions);
+    fetch(
+      "http://registration-bg-alb-537980081.us-east-1.elb.amazonaws.com/registration/addNewUser",
+      requestOptions
+    );
 
     this.setState({
       tableData: [...this.state.tableData, newUser]
@@ -36,7 +39,9 @@ export class App extends Component {
   };
 
   componentDidMount() {
-    fetch("/registration/allUsers")
+    fetch(
+      "http://registration-bg-alb-537980081.us-east-1.elb.amazonaws.com/registration/allUsers"
+    )
       .then(response => response.json())
       .then(result => {
         this.setState({ tableData: result });
