@@ -14,6 +14,14 @@ export class App extends Component {
   }
 
   addNewUser(newUser) {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newUser)
+    };
+
+    fetch("/registration/addNewUser", requestOptions);
+
     this.setState({
       tableData: [...this.state.tableData, newUser]
     });
@@ -26,6 +34,14 @@ export class App extends Component {
   onHide = () => {
     this.setState({ showModal: false });
   };
+
+  componentDidMount() {
+    fetch("/registration/allUsers")
+      .then(response => response.json())
+      .then(result => {
+        this.setState({ tableData: result });
+      });
+  }
 
   render() {
     return (
