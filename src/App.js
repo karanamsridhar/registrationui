@@ -21,7 +21,7 @@ export class App extends Component {
     };
 
     fetch(
-      "https://z3eed1yun6.execute-api.us-east-1.amazonaws.com/registration/addNewUser",
+      "https://uz4aq2mipe.execute-api.us-east-1.amazonaws.com/Devl/addNewUser",
       requestOptions
     );
 
@@ -40,7 +40,7 @@ export class App extends Component {
 
   componentDidMount() {
     fetch(
-      "https://z3eed1yun6.execute-api.us-east-1.amazonaws.com/registration/allUsers"
+      "https://uz4aq2mipe.execute-api.us-east-1.amazonaws.com/Devl/allUsers"
     )
       .then(response => response.json())
       .then(result => {
