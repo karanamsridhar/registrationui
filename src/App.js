@@ -21,7 +21,7 @@ export class App extends Component {
     };
 
     fetch(
-      "http://registration-bg-alb-537980081.us-east-1.elb.amazonaws.com/registration/addNewUser",
+      "https://z3eed1yun6.execute-api.us-east-1.amazonaws.com/registration/addNewUser",
       requestOptions
     );
 
@@ -40,7 +40,7 @@ export class App extends Component {
 
   componentDidMount() {
     fetch(
-      "http://registration-bg-alb-537980081.us-east-1.elb.amazonaws.com/registration/allUsers"
+      "https://z3eed1yun6.execute-api.us-east-1.amazonaws.com/registration/allUsers"
     )
       .then(response => response.json())
       .then(result => {
